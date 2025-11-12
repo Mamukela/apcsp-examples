@@ -4,6 +4,7 @@ import json
 
 
 CELL_SIZE = 40
+SECRET_COLOR = "#3d5aab"
 WALL_COLOR = "#1e3a8a"
 PATH_COLOR = "#dbeafe"
 TURTLE_COLOR = "#059669"
@@ -81,6 +82,8 @@ class MazeGame:
 
                 if self.maze[y][x] == 1:
                     self.drawer.fillcolor(WALL_COLOR)
+                elif self.maze[y][x] == 2:
+                    self.drawer.fillcolor(SECRET_COLOR)
                 else:
                     self.drawer.fillcolor(PATH_COLOR)
 
@@ -198,7 +201,7 @@ class MazeGame:
 
         if (0 <= next_pos[1] < self.maze_height and
             0 <= next_pos[0] < self.maze_width and
-            self.maze[next_pos[1]][next_pos[0]] == 0):
+            self.maze[next_pos[1]][next_pos[0]] != 1):
             self.current_pos = next_pos
             self.position_player()
             return True
