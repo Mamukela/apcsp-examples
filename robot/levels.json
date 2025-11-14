@@ -55,5 +55,20 @@
     "end": [5, 5],
     "hint": "Pay close attention to the wall color",
     "concept": "Done by Mamuka"
-  }
+  },
+  "5": {
+        "maze": [
+          [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [1, 1, 1, 1, 0, 0, 0, 0, 0],
+          [1, 1, 1, 1, 0, 0, 0, 0, 0],
+          [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [1, 1, 0, 0, 0, 0, 0, 0, 0],
+          [1, 0, 0, 0, 0, 0, 0, 0, 1],
+          [1, 1, 1, 1, 1, 1, 1, 1, 1]
+        ],
+        "start": [ 1, 5],
+        "end": [0,0],
+        "hint": "Find the shortest path! This is pathfinding.",
+        "concept": "Pathfinding Algorithm -by Kira"
+}
 }
